@@ -6,11 +6,11 @@ ENV OPENVSCODE="${OPENVSCODE_SERVER_ROOT}/bin/openvscode-server"
 USER root
 RUN apt update && apt upgrade -y
 RUN DEBIAN_FRONTEND=noninteractive apt install gh ssh pipx curl wget -y && \
-    pipx ensurepath && \
-    pipx install -include-deps ansible
+    pipx ensurepath
 
 
-# RUN curl --proto '=https' --tlsv1.2 -fsSL https://get.opentofu.org/install-opentofu.sh -o install-opentofu.sh && \
+# RUN pipx install -include-deps ansible && \
+#    curl --proto '=https' --tlsv1.2 -fsSL https://get.opentofu.org/install-opentofu.sh -o install-opentofu.sh && \
 #    chmod +x install-opentofu.sh && \
 #    ./install-opentofu.sh --install-method deb && \
 #    curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 && \
