@@ -8,8 +8,8 @@ RUN \
     # Direct download links to external .vsix not available on https://open-vsx.org/
     # The two links here are just used as example, they are actually available on https://open-vsx.org/
     urls=(\
-        https://github.com/rust-lang/rust-analyzer/releases/download/2022-12-26/rust-analyzer-linux-x64.vsix \
-        https://github.com/VSCodeVim/Vim/releases/download/v1.24.3/vim-1.24.3.vsix \
+        https://github.com/rust-lang/rust-analyzer/releases/download/2025-08-25/rust-analyzer-linux-x64.vsix \
+        https://github.com/VSCodeVim/Vim/releases/download/v1.30.1/vim-1.30.1.vsix \
     )\
     # Create a tmp dir for downloading
     && tdir=/tmp/exts && mkdir -p "${tdir}" && cd "${tdir}" \
