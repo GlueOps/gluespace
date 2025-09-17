@@ -1,4 +1,4 @@
-FROM gitpod/openvscode-server:latest
+FROM gitpod/openvscode-server:latest@sha256:af624c0dd6c6933d2aa53914b7396bfba58223fae2942266d8878d06d2778142
 
 ENV OPENVSCODE_SERVER_ROOT="/home/.openvscode-server"
 ENV OPENVSCODE="${OPENVSCODE_SERVER_ROOT}/bin/openvscode-server"
