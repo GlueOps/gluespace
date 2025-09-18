@@ -37,6 +37,6 @@ RUN \
   ) && \
   tdir=/tmp/exts && mkdir -p "${tdir}" && cd "${tdir}" && \
   wget "${urls[@]}" && \
-  exts=( gitpod.gitpod-theme "${tdir}"/* ) && \
+  exts=( gitpod.gitpod-theme smartmanoj.github-codespaces-connector "${tdir}"/* ) && \
   for ext in "${exts[@]}"; do ${OPENVSCODE} --install-extension "${ext}"; done && \
   rm -rf "${tdir}"
