@@ -34,6 +34,7 @@ RUN \
   urls=( \
     https://github.com/rust-lang/rust-analyzer/releases/download/2025-08-25/rust-analyzer-linux-x64.vsix \
     https://github.com/VSCodeVim/Vim/releases/download/v1.30.1/vim-1.30.1.vsix \
+    https://github.com/DragonSecurity/drill-vscode/releases/download/v/drill-vscode-0.5.0.vsix \
   ) && \
   tdir=/tmp/exts && mkdir -p "${tdir}" && cd "${tdir}" && \
   wget "${urls[@]}" && \
