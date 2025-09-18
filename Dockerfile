@@ -41,3 +41,5 @@ RUN \
   exts=( gitpod.gitpod-theme smartmanoj.github-codespaces-connector "${tdir}"/* ) && \
   for ext in "${exts[@]}"; do ${OPENVSCODE} --install-extension "${ext}"; done && \
   rm -rf "${tdir}"
+
+  ENTRYPOINT [ "/bin/sh", "-c", "exec ${OPENVSCODE_SERVER_ROOT}/bin/openvscode-server --host 0.0.0.0 \"${@}\"", "--" ]
